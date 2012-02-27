@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Side Content Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+		.sidecontentpullout {
+			background-color: Black;
+			color: White;
+			padding: 4px 3px;
+			-moz-border-radius-bottomleft: 1em;
+			-moz-border-radius-topleft: 1em;
+			-webkit-border-bottom-left-radius: 1em;
+			-webkit-border-top-left-radius: 1em;
+			border-bottom-left-radius: 1em;
+			border-top-left-radius: 1em;
+		}
+		
+		.sidecontentpullout:hover {
+			background-color: #444444;
+			color: White;
+		}
+		
+		.sidecontent {
+			background-color: Black;
+			color: White;
+			-moz-border-radius-bottomleft: 1em;
+			-webkit-border-bottom-left-radius: 1em;
+			border-bottom-left-radius: 1em;
+		}
+		
+		.sidecontent > div > div {
+			padding-left: 10px;
+			padding-right: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Side-Content/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Side Content Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Side Content Summary</h2>
+			<p>The jQuery Side Content project is a plugin that docks content to the side of the browser window with "pull out" handles to open and close the panels.</p>
+			<p>You can add multiple side-content tabs to the side of your page and the plugin will automatically toggle them when the visitor clicks on the "pull out".</p>
+		</div>
+		<div id="how">
+			<div class="side" title="Slide 1">
+				<h2>Side Content</h2>
+				<p>This is the side content that you want to de-clutter from your page.</p>
+				<p>You can apply whatever CSS rules you like to this element, only the position and behaviour will be changed by the plugin.</p>
+				<p>There are plenty of configurable settings if you want to change the default behaviour!</p>
+			</div>
+			<div class="side" title="Slide 2">
+				<h2>More Content</h2>
+				<p>This is a different panel</p>
+				<p>This is the side content that you want to de-clutter from your page.</p>
+				<p>You can apply whatever CSS rules you like to this element, only the position and behaviour will be changed by the plugin.</p>
+				<p>There are plenty of configurable settings if you want to change the default behaviour!</p>
+			</div>
+			<div class="side" title="Slide 3">
+				<h2>Another One</h2>
+				<p>This is a different panel</p>
+			</div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Side-Content/">read the side content documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+
+				<dt>attachto</dt>
+				<dd>You can opt to dock the side content panels on the "leftside" or "rightside" of the browser.</dd>
+
+				<dt>width</dt>
+				<dd>The width of the panel when it is activated, for example "300px" or "33%".</dd>
+				
+				<dt>opacity</dt>
+				<dd>Set this to a value less than "1" to make the footer semi-transparent, for example "0.8".</dd>
+				
+				<dt>pulloutpadding</dt>
+				<dd>use this option to set a gap between the pullout tabs, for example "5" for 5 pixel spacing 
+				(note, any padding you apply will eat into this number, so you might need to increase it if you don't see a gap)</dd>
+
+				<dt>textdirection</dt>
+				<dd>The direction of text on the pullout, "horizontal" or "vertical".</dd>
+				
+				<dt>clickawayclose</dt>
+				<dd>Whether to close the tabs when the user clicks away from the tabs.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.sidecontent.js"></script>
+	<script type="text/javascript">
+		$(".side").sidecontent();
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

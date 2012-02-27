@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mega Select List Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recommended styles */
+	
+		.megaselectlistcolumn {
+			width: 31%;
+			margin: 0 1%;
+			float: left;
+		}
+		
+		.megaselectlist .currentitem {
+			padding: 0;
+			border: 0.1em dotted Green;
+			color: Black;
+		}
+	
+		/* Optional styles */
+		
+		.megaselectlist {
+			background-color: #F5F5F5;
+			border: 1px solid Silver;
+		}
+		
+		.megaselectlistcolumn > h2 {
+			font-size: 1em;
+			background-color: #ECECEC;
+			text-align: center;
+			padding: 2px 0;
+			margin: 0;
+		}
+		
+		.megaselectlist > p {
+			margin: 0.2em;
+		}
+		
+		.megaselectlistcolumn > ul {
+			padding-left: 1em;
+			margin: 0;
+			color: Gray;
+		}
+		
+		.megaselectlistcolumn > ul > li {
+			cursor: pointer;
+			padding: 0.1em;
+			font-size: small;
+		}
+		
+		.megaselectlistcolumn > ul > li:hover {
+			background-color: #ECECEC;
+			color: Black;
+		}
+		
+		/* CSS based expand and collapse */
+		
+		#megaselectlist1 .megaselectlistoptions {
+			display: none;
+		}
+		
+		#megaselectlist1:hover .megaselectlistoptions {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Mega-Select-List/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Mega Select List Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Mega Select List Summary</h2>
+			<p>The jQuery Mega Select List is a plugin that converts large select lists into a mega-menu style list of options.</p>
+			<p>This plugin doesn't affect your form, posting back the selected value as if the options were being selected in a normal select list.</p>
+			<p>You can animate the mega-select-list using CSS as per this example, or you can have it constantly expanded instead.</p>
+			<h3>Keyboard Navigation</h3>
+			<p>You can navigate to a mega select list using the tab key - just like any form element. You can use the enter key or the space bar to expand or collapse
+			the mega select list if animation is switched on.</p>
+			<p>You can move through the items with the tab key and use either space or enter to select and de-select items. You can use page up to go to the start of
+			the list and page down to skip to the end of the list.</p>
+			<p>On a single-select list, when you select an item, focus will return to the title.</p>
+			<p>When the list is in a collapsed state, tabbing past the title will skip all of the items automatically.</p>
+			<p>You can use the escape key to collapse an expanded list.</p>
+		</div>
+		<div id="how">
+			<p>With JavaScript animation (click to change)</p>
+			<form method="post" action="">
+				<fieldset>
+					<legend>Example 1</legend>
+					<p><label for="example2">Select an item</label>
+					<select name="example2" id="example2">
+						<optgroup label="Hampshire">
+							<option value="1">Andover</option>
+							<option value="2">Alton</option>
+							<option value="3">Basingstoke</option>
+							<option value="4">Fareham</option>
+							<option value="5">Portsmouth</option>
+							<option value="6">Romsey</option>
+							<option value="7">Southampton</option>
+							<option value="8">Waterlooville</option>
+							<option value="9">Winchester</option>
+						</optgroup>
+						<optgroup label="Dorset">
+							<option value="9">Blandford</option>
+							<option value="10">Bournemouth</option>
+							<option value="11">Christchurch</option>
+							<option value="12">Ferndown</option>
+							<option value="13">Poole</option>
+							<option value="14">Verwood</option>
+							<option value="15">Wareham</option>
+							<option value="16">Weymouth</option>
+							<option value="17">Wimbourne</option>
+						</optgroup>
+						<optgroup label="Wiltshire">
+							<option value="18">Devizes</option>
+							<option value="19">Frome</option>
+							<option value="20">Salisbury</option>
+							<option value="21">Trowbridge</option>
+							<option value="22">Warminster</option>
+							<option value="23">Westbury</option>
+						</optgroup>
+					</select></p>
+					<p><input type="submit" value="Submit"></p>
+				</fieldset>
+			</form>
+			<p>With Multiple Selections, and maximum number of items (you can also make this unlimited) - also demonstrates pre-selected items</p>
+			<form method="post" action="">
+				<fieldset>
+					<legend>Example 2</legend>
+					<p><label for="example3">Select an item</label>
+					<select name="example3" id="example3" multiple="true">
+						<optgroup label="Hampshire">
+							<option value="1">Andover</option>
+							<option value="2" selected="true">Alton</option>
+							<option value="3" selected="true">Basingstoke</option>
+							<option value="4">Fareham</option>
+							<option value="5">Portsmouth</option>
+							<option value="6">Romsey</option>
+							<option value="7">Southampton</option>
+							<option value="8">Waterlooville</option>
+							<option value="9">Winchester</option>
+						</optgroup>
+						<optgroup label="Dorset">
+							<option value="9">Blandford</option>
+							<option value="10">Bournemouth</option>
+							<option value="11">Christchurch</option>
+							<option value="12">Ferndown</option>
+							<option value="13">Poole</option>
+							<option value="14">Verwood</option>
+							<option value="15">Wareham</option>
+							<option value="16">Weymouth</option>
+							<option value="17">Wimbourne</option>
+						</optgroup>
+						<optgroup label="Wiltshire">
+							<option value="18">Devizes</option>
+							<option value="19">Frome</option>
+							<option value="20">Salisbury</option>
+							<option value="21">Trowbridge</option>
+							<option value="22">Warminster</option>
+							<option value="23">Westbury</option>
+						</optgroup>
+					</select></p>
+					<p><input type="submit" value="Submit"></p>
+				</fieldset>
+			</form>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Mega-Select-List/">read the mega select list documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+
+				<dt>headers</dt>
+				<dd>If you choose not to use optgroups, you can instead choose to add the headers to an attribute on the option element. 
+				Specify the attribute you have used here, for example "rel".</dd>
+				
+				<dt>animate</dt>
+				<dd>Whether the select list should animate or be fixed. Set to true to trigger animations.</dd>
+				
+				<dt>animateevent</dt>
+				<dd>Specify whether the list should expand on "click" or "mouseover".</dd>
+				
+				<dt>multiple</dt>
+				<dd>Whether multiple selections are allowed (true/false).</dd>
+				
+				<dt>maximumitems</dt>
+				<dd>For multiple lists, how many items are allowed (0 is unlimited).</dd>
+				
+				<dt>warningmessage</dt>
+				<dd>The message to show when too many items are selected. Add {0} to show the number, for example "Only {0} items allowed".</dd>
+
+				<dt>itemseparator</dt>
+				<dd>The character to separate items in a multiple selection list, for example ", " or " ".</dd>
+				
+				<dt>hideloading</dt>
+				<dd>If you are using animation, prevents the initial collapse from being animated (true/false).</dd>
+				
+				<dt>isxhtml</dt>
+				<dd>Whether your document is XHTML or not (affects option output)</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.megaselectlist.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Single select
+			$("#example2").megaselectlist({ animate: true, animateevent: "click" });
+			
+			// Multiple select, with a maximum number of items
+			$("#example3").megaselectlist({ animate: true, animateevent: "click", multiple: true, maximumitems: 3 });
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

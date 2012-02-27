@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Textarea Expander Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Textarea-Expander/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Textarea Textarea Expander</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Textarea Expander Summary</h2>
+			<p>The jQuery Textarea Expander is a plugin that allows textareas to expand as more content is added.</p>
+			<p>You can type content in, or copy and paste content in and the text area will grow in height to fit the content.</p>
+		</div>
+		<div id="how">
+			<form method="post" action="">
+				<fieldset>
+					<legend>Example</legend>
+					<p><label>Start typing below...<br>
+					<textarea rows="2" cols="60"></textarea></label></p>
+				</fieldset>
+			</form>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Textarea-Expander/">read the input expander documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.textareaexpander.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("textarea").inputexpander();
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<body>
+		<div class="qrContainer"></div>
+		<script src="jquery.min.js"></script>
+		<script>
+		(function(){$.fn.QRCode=function(a,b){var c={width:200,height:200};if(b){$.extend(c,b)}this.each(function(){$(this).append("<img src='https://chart.googleapis.com/chart?cht=qr&chs="+c.width+"x"+c.height+"&chl="+escape(a)+"' alt='QR Code' />")})}})(jQuery);
+
+		$(document).ready(function() {
+			$(".qrContainer").QRCode("Steve Fenton - Adzuki Limited. 3 Hollies Court, Limes Park, Basingstoke RG24 9RJ Tel: 07775 668799 Web: http://www.adzuki.co.uk/ Email: steve.fenton@adzuki.co.uk", {width:400, height:400 });
+		});
+		</script>
+	</body>
+</html>

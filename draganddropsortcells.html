@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Drag And Drop Sort Example - Cells</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recommended styles */
+		tbody .ddsinsert {
+			border-left: 3px solid Green;
+		}
+
+		.ddsitem {
+			cursor: crosshair;
+		}
+		
+		.ddsmoving {
+			color: Orange;
+		}
+		
+		/* Optional styles */
+		
+		table {
+			width: 300px;
+			border: 1px solid Gray;
+			border-collapse: collapse;
+		}
+		
+		td {
+			border: 1px solid Gray;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Drag-And-Drop-Sort/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Drag And Drop Sort Example - Cells</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Drag And Drop Sort Summary</h2>
+			<p>The jQuery Drag And Drop Sort project is a plugin that adds drag and drop sorting to any group of elements.</p>
+			<p>This means you can apply drag and drop sorting to a table or a list or practically any group of elements, such as some paragraphs inside a division.</p>
+		</div>
+		<div id="how">
+			<h3>Sortable table cells</h3>
+			<table>
+				<thead>
+					<tr><th>Name</th><th>Value</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>One</td><td>Two</td><td>Three</td><td>Four</td></tr>
+					<tr><td>A</td><td>B</td><td>C</td><td>D</td></tr>
+				</tbody>
+			</table>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Drag-And-Drop-Sort/">read the drag and drop sort documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>appendlastline</dt>
+				<dd>Specifies whether the plugin should add an additional line to allow items to be dragged to the very end of the list. Defaults to "true", but can be set to "false" if desired.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.draganddropsort.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#example1").draganddropsort();
+			$("tr").draganddropsort({ allowtransfer: false });
+			$("#example3").draganddropsort();
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

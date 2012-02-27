@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Three Dee Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+		#how {
+			font-size: 1.7em;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Three-Dee/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Three Dee Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Three Dee Summary</h2>
+			<p>The jQuery Three Dee project is a plugin that transforms plain text into eye-popping 3D text.</p>
+			<p>You'll need a pair of red/blue 3D glasses to view the 3D effect in this example.</p>
+		</div>
+		<div id="how">
+			<p>At the moment, <span class="far">3D is</span> <span class="near">everywhere you go.</span></p>
+				<p>You'll find it in <span class="very-near">films</span> and <span class="far">pictures</span> and <span class="near">television</span> 
+				and <span class="far">of course</span><br><span class="very-near">in real life!</span></p>
+				<p>Don't you think its time that 3D said <span class="far">Hello</span> <span class="near">World</span> on the Internet?</p>
+				<p><span class="woosh">jQuery three-dee</span> brings 3D to the <span class="woosh">web page!</span></p>
+				<p>A quick note, <span class="extreme">extreme</span> and <span class="very-extreme">very extreme</span><br>
+				work best when viewed at a distance from the screen.</p>
+				<ul class="samples">
+					<li>Sample of <span class="very-far">very-far</span> text</li>
+					<li>Sample of <span class="far">far</span> text</li>
+					<li>Sample of <span class="middle">middle</span> text</li>
+					<li>Sample of <span class="near">near</span> text</li>
+					<li>Sample of <span class="very-near">very-near</span> text</li>
+					<li>Sample of <span class="extreme">extreme</span> text</li>
+					<li>Sample of <span class="very-extreme">very-extreme</span> text</li>
+				</ul>
+				<p>The above examples give you an indication of the distances.<br>3D is more effective if you follow these guidelines</p>
+				<ul>
+					<li>Put 3D text next to non-3D text for greater depth and impact.</li>
+					<li>If you are working with smaller font sizes, the difference between each increment is diminished. Large text looks awesome in 3D.</li>
+					<li>Typically, use very-far, middle and very-near sizes to give different depths of field.</li>
+					<li>You can amplify the 3D effect by making nearer text larger, which makes it look even closer.</li>
+				</ul>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Three-Dee/">read the three dee documentation</a> for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>depth</dt>
+				<dd>Sets the intensity of the 3D effect. "very-far", "far", "middle", "near", "very-near", "extreme", "very-extreme".</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.threedee.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".very-far").threedee({ depth: "very-far" });
+			$(".far").threedee({ depth: "far" });
+			$(".middle").threedee({ depth: "middle" });
+			$(".near").threedee({ depth: "near"});
+			$(".very-near").threedee({ depth: "very-near"});
+			$(".extreme").threedee({ depth: "extreme"});
+			$(".very-extreme").threedee({ depth: "very-extreme"});
+			$(".woosh").threedee({ depth: "near" });
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

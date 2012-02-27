@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Uppy Downer Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+		.uppydownerbutton {
+			border: 1px solid Gray;
+			background-color: Silver;
+			color: Black;
+			padding: 0 5px;
+			margin: 0 1px;
+			font-weight: bold;
+			position: relative;
+			top: 2px;
+			cursor: pointer;
+		}
+		
+		.uppydowner {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Uppy-Downer/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Uppy Downer Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Uppy Downer Summary</h2>
+			<p>The jQuery Uppy Downer project is a plugin that adds increment and decrement buttons to a text input, which allow the value to be adjusted.</p>
+			<p>The button text, increments and position of the buttons is configurable and style-able with CSS.</p>
+		</div>
+		<div id="how">
+			<form method="post" action="">
+				<fieldset>
+					<legend>Example</legend>
+					<p><label>Some Number<br>
+					<input type="text" value="0" size="2" class="uppydowner"></label></p>
+				</fieldset>
+			</form>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Uppy-Downer/">read the uppy downer documentation</a> 
+			for instructions on how to use the plugin.</p>
+
+		</div>
+		<div id="options">
+
+			<h2>Options</h2>
+			<dl>
+				<dt>classModifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+
+				<dt>upButton</dt>
+				<dd>The text or HTML to display for the up button, default "+"</dd>
+				
+				<dt>upPlaceBefore</dt>
+				<dd>Whether the up button should be placed before the input, default false</dd>
+				
+				<dt>downButton</dt>
+				<dd>The text or HTML to display for the up button, default "&ndash;"</dd>
+				
+				<dt>downPlaceBefore</dt>
+				<dd>Whether the up button should be placed before the input, default true</dd>
+				
+				<dt>step</dt>
+				<dd>The amount to adjust the value each time a button is pressed, default 1</dd>
+				
+				<dt>minValue</dt>
+				<dd>The minimum value for the field, default -10000</dd>
+				
+				<dt>maxValue</dt>
+				<dd>The maximum value for the field, default 10000</dd>
+			</dl>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.uppydowner.js"></script>
+	<script type="text/javascript">
+		$(".uppydowner").uppydowner({ minValue: -10, maxValue: 10 });
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+
+</body>
+</html>

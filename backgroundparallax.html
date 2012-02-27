@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Background Parallax Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recomended styles */
+		
+		#horizontal {
+			background-image: url(horizontal.png);
+			background-position: 0px 0px; /* horizontal vertical */
+			height: 300px;
+			width: 300px;
+			overflow: auto;
+		}
+		
+		#vertical {
+			background-image: url(vertical.png);
+			background-position: 0px 0px; /* horizontal vertical */
+			height: 300px;
+			width: 300px;
+			overflow: auto;
+		}
+
+		/* Optional styles */
+		
+		#horizontal {
+			float: left;
+			margin-left: 100px;
+		}
+
+		#horizontal > div {
+			height: 270px;
+			width: 900px;
+			margin: 0;
+			color: White;
+		}
+
+		#horizontal .panel {
+			width: 31%;
+			padding: 0 1%;
+			float: left;
+		}
+		
+		#vertical {
+			float: left;
+			margin-left: 100px;
+		}
+
+		#vertical > div {
+			margin: 0;
+			color: White;
+		}
+
+		#vertical .panel {
+			padding: 0 1%;
+			height: 300px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Background-Parallax/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Background Parallax Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Background Parallax Summary</h2>
+			<p>The jQuery Background Parallax project is a plugin that causes a background image to scroll at a different speed to content, giving an illusion of depth.</p>
+			<p>You can set up the background parallax on any scrolling element (such as a div, with overflow set to auto) and it works both horizontally and vertically.</p>
+		</div>
+		<div id="how">
+			<div id="horizontal">
+				<div>
+					<div class="panel">
+						<h3>Panel Example</h3>
+						<p>This is an example of a panel of content within the scrolling division.</p>
+						<p>The parallax effect will cause the background to travel faster than this content.</p>
+					</div>
+					<div class="panel">
+						<h3>Panel Example</h3>
+						<p>This is an example of a panel of content within the scrolling division.</p>
+						<p>The parallax effect will cause the background to travel faster than this content.</p>
+					</div>
+					<div class="panel">
+						<h3>Panel Example</h3>
+						<p>This is an example of a panel of content within the scrolling division.</p>
+						<p>The parallax effect will cause the background to travel faster than this content.</p>
+					</div>
+				</div>
+			</div>
+			<div id="vertical">
+				<div>
+					<div class="panel">
+						<h3>Panel Example</h3>
+						<p>This is an example of a panel of content within the scrolling division.</p>
+						<p>The parallax effect will cause the background to travel faster than this content.</p>
+					</div>
+					<div class="panel">
+						<h3>Panel Example</h3>
+						<p>This is an example of a panel of content within the scrolling division.</p>
+						<p>The parallax effect will cause the background to travel faster than this content.</p>
+					</div>
+					<div class="panel">
+						<h3>Panel Example</h3>
+						<p>This is an example of a panel of content within the scrolling division.</p>
+						<p>The parallax effect will cause the background to travel faster than this content.</p>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both">&nbsp;</div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Background-Parallax/">read the background parallax documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>intensity</dt>
+				<dd>The intensity of the effect. Set to "0.5" by default. "1" would scroll the background at the same speed as the content, "0.5" makes the 
+				background move more slowly than the content. "1.5" makes the background move faster than the content. Sensible values range from "0.1" to "2.5".</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.backgroundparallax.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#horizontal").backgroundparallax();
+			$("#vertical").backgroundparallax();
+		});
+	</script>
+	
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

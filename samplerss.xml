@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <atom:link href="http://www.stevefenton.co.uk/RSS/Blog/" rel="self" type="application/rss+xml" />
+    <title>Steve Fenton Blog</title>
+    <link>http://www.stevefenton.co.uk/RSS/Blog/</link>
+    <description>Blog</description>
+    <language>en</language>
+    <copyright>Copyright 2008 - 2010 Steve Fenton</copyright>
+    <category>Blog</category>
+    <generator>Swift Point Content Management System</generator>
+    <ttl>60</ttl>
+    <managingEditor>info@stevefenton.co.uk (Site Admin)</managingEditor>
+    <item>
+        <title><![CDATA[Jquery Plugin For Drag And Drop On Mobile Phones]]></title>
+        <link>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Jquery-Plugin-For-Drag-And-Drop-On-Mobile-Phones/</link>
+        <description><![CDATA[Monday, 12th July 2010 - Jquery Plugin For Drag And Drop On Mobile Phones <p>I have made some reasonable progress with creating a drag-and-drop interface that works both on desktop computers and mobile devices.</p><p>For those who are unaware of the problem, most touch-screen phones actually hijack the action of dragging on a web page in order to scroll the page up, down, left and right. This means that your average drag and drop mechanism doesn't work on mobile devices despite their inherent tactile nature.</p><p>However, I have managed to create a simple script that works as normal drag and drop on a desktop browser, which also has a fail-safe "tap to lift" and "tap to drop" mechanism that works on mobile devices, such as smart-phones, iPhones, iPads and Android phones. I have rolled the script into a jQuery plugin for ease of use, although you could easily adapt it to suit a non-jQuery environment.]]> &lt;a href="http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Jquery-Plugin-For-Drag-And-Drop-On-Mobile-Phones"&gt;View Details&lt;/a&gt;.</description>
+        <guid>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Jquery-Plugin-For-Drag-And-Drop-On-Mobile-Phones</guid>
+    </item>
+    <item>
+        <title><![CDATA[The Importance Of Anonymising Blog Posts]]></title>
+        <link>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/The-Importance-Of-Anonymising-Blog-Posts/</link>
+        <description><![CDATA[Monday, 12th July 2010 - The Importance Of Anonymising Blog Posts <p>With blogging become ever more popular in the technology world, both in terms of sharing and finding new ideas or answers to common problems, now is a good time to highlight the importance of anonymising your blog posts.</p><p>You may have stumbled across something absolutely awesome while fixing a problem for one of your clients and you'll want to share it with the big wide world - but you may be surprised about how many pieces of information you may be giving away if you copy and paste a chunk of code into your blog. Not only this, but in your blog post, it is sometimes better to rename all of your fields and methods to make them contribute to the explanation of your article.]]> &lt;a href="http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/The-Importance-Of-Anonymising-Blog-Posts"&gt;View Details&lt;/a&gt;.</description>
+        <guid>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/The-Importance-Of-Anonymising-Blog-Posts</guid>
+    </item>
+    <item>
+        <title><![CDATA[Simple Mobile Web Browser Drag And Drop]]></title>
+        <link>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Simple-Mobile-Web-Browser-Drag-And-Drop/</link>
+        <description><![CDATA[Friday, 9th July 2010 - Simple Mobile Web Browser Drag And Drop <p>I recently discovered a problem on my mobile device with drag and drop. The problem is that mobile devices are now an inherently drag and drop environment, where almost everything can be done at the swipe of a finger. You would think that this would make it easier to have items on your web page that can be dragged around, but actually it makes it more difficult. The reason it is harder is that when a user performs a swipe or drag action while browsing a website, the mobile device captures this event and uses it to scroll around the page. This means that your draggable item never receives the instruction to move.]]> &lt;a href="http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Simple-Mobile-Web-Browser-Drag-And-Drop"&gt;View Details&lt;/a&gt;.</description>
+        <guid>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Simple-Mobile-Web-Browser-Drag-And-Drop</guid>
+    </item>
+
+</channel>
+</rss>

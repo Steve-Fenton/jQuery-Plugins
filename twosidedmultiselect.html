@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Two Sided Multi Select Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recommended styles */
+		.tsmsselect {
+			width: 40%;
+			float: left;
+		}
+		
+		.tsmsselect select {
+			width: 100%;
+		}
+		
+		.tsmsoptions {
+			width: 20%;
+			float: left;
+		}
+		
+		.tsmsoptions p {
+			margin: 2px;
+			text-align: center;
+			font-size: larger;
+			cursor: pointer;
+		}
+		
+		.tsmsoptions p:hover {
+			color: White;
+			background-color: Silver;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Two-Sided-Multi-Selector/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Two Sided Multi Select Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Two Sided Multi Select Summary</h2>
+			<p>The jQuery Two-Sided Multi-Select project is a plugin that converts a multi-select list into a more user-friendly two-sided list with 
+			options to move items from the "available" list into the "selected" list and back.</p>
+			<p>You can move single items or all items back and forth using the buttons, or double click to quick-move any item.</p>
+			<p>The original order of the items will always be preserved, no matter what order you move them back and forward in.</p>
+		</div>
+		<div id="how">
+			<p>This is an example of what the multi-select looks like without the plugin.</p>
+			<form method="post" action="">
+				<select name="anotherselect" size="6" multiple="true">
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+				<option value="4">Four</option>
+				<option value="5">Five</option>
+				<option value="6">Six</option>
+				</select>
+				<div style="clear: both;">
+					<input type="submit" value="Go">
+				</div>
+			</form>
+
+			<p>And here are some examples with two-sided multi-select.</p>
+			<form method="post" action="">
+				<select name="myselect[]" id="myselect" class="multiselect" size="6" multiple="true">
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+				<option value="4">Four</option>
+				<option value="5">Five</option>
+				<option value="6">Six</option>
+				</select>
+				<div style="clear: both;">
+					<input type="submit" value="Go">
+				</div>
+			</form>
+
+			<p>You can use it on as many select lists as you wish and each will work independently. This list already has a couple of selected values.</p>
+			<form method="post" action="">
+				<select name="yourselect" class="multiselect" size="6" multiple="true">
+				<option value="A" selected="true">The Letter A</option>
+				<option value="B">The Letter B</option>
+				<option value="C" selected="true">The Letter C</option>
+				<option value="D">The Letter D</option>
+				<option value="E" selected="true">The Letter E</option>
+				<option value="F">The Letter F</option>
+				</select>
+				<div style="clear: both;">
+					<input type="submit" value="Go">
+				</div>
+			</form>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Two-Sided-Multi-Selector/">read the two-sided multi-select documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>No Options</dt>
+				<dd>There aren't currently any options for this plugin!</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.twosidedmultiselect.js"></script>
+	<script type="text/javascript">
+		// This is the only line you need for the plugin
+		$(".multiselect").twosidedmultiselect();
+		
+		// The below script is for information / example...
+		
+		// How to get the current selected items (note, they won't always have a "selected" attribute, but they will be in the box with the original ID:
+		var selectedOptions = $("#yourselect")[0].options;
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Simple Map Example</title>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+		#map { 
+			width: 600px;
+			height: 400px;
+			margin: 20px auto;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Simple-Map/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Simple Map Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Simple Map Summary</h2>
+			<p>The jQuery Simple Map plugin is the easiest way to add Google Maps to your web page, and uses version 3 of the Google Maps API.</p>
+		</div>
+		<div id="how">
+			<div id="map"></div>
+			<div id="map2"></div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Simple-Map/">read the simple maps documentation</a> 
+			for instructions on how to use the plugin.</p>
+			<p>Please visit Google to view their <a href="http://code.google.com/apis/maps/terms.html">terms of service</a>.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>addressList</dt>
+				<dd>A list of addresses, or search terms (note that the markers may not be visible given their distance from the first address and the zoom level of the map)</dd>
+				
+				<dt>zoom</dt>
+				<dd>The zoom level.</dd>
+			</dl>
+			<p>Additionally, you can change the map by calling the plugin again with different parameters</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.simplemap.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function () {
+			$("#map").simplemap({ 
+				classModifier: "simplemaps",
+				addressList: ["Buckingham Palace, London", " 45 Buckingham Gate, SW1E 6AF"],
+				zoom: 15
+			});
+		});
+		
+		// To change the location of the map, just call the plugin again...
+		//window.setTimeout(function () {
+		//	$("#map").simplemap({ 
+		//		classModifier: "simplemaps",
+		//		addressList: ["Windsor Castle"],
+		//		zoom: 15
+		//	});
+		//}, 10000);
+	</script>
+	
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

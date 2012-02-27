@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gestures Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		.gesturesmotion {
+			color: Green;
+			font-size: 200%;
+		}
+		
+		#gesturezone1 {
+			width: 400px;
+			height: 320px;
+			margin: 10px auto;
+			background-color: Silver;
+			text-align: center;
+			font-size: 190px;
+			padding-top: 80px;
+			overflow: hidden;
+			border: 1px solid White;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Gestures/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Gestures Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Gestures Summary</h2>
+			<p>The jQuery Gestures project is a plugin that brings simple guesture support to the mouse.</p>
+		</div>
+		<div id="how">
+			<p>In this demo, drag within the gray zone to create a gesture. You can use eight compass points, N, NE, E, SE, S, SW, W, NW.</p>
+			<p>The gesture must start and end within the "gesture" element - but you can apply this to the entire document as well as individual elements.</p>
+			<p>This version also supports composite gestures, which combine several compass directions to create a shape. This gives gestures many more variations than the eight compass points.</p>
+			<p>On the box below, try drawing a box shape, or just a simple line to see the plugin in action.</p>
+			<div id="gestureoutput">&nbsp;</div>
+			<div id="gesturezone1"></div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Gestures/">read the gestures documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+
+			<h2>Options</h2>
+			<dl>
+				<dt>classModifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+
+				<dt>tolerance</dt>
+				<dd>The amount of movement to ignore (default 25)</dd>
+				
+				<dt>startEvent</dt>
+				<dd>The event to start the gesture tracking (default "mousedown")</dd>
+				
+				<dt>endEvent</dt>
+				<dd>The event to end the gesture tracking (default "mouseup")</dd>
+				
+				<dt>advancedShapes</dt>
+				<dd>Whether to track advanced shapes (default false)</dd>
+				
+				<dt>shapeSpeed</dt>
+				<dd>The interval for advanced shape tracking (default 200)</dd>
+				
+				<dt>showTrail</dt>
+				<dd>Whether to show a trail while tracking (default false)</dd>
+				
+				<dt>trailSpeed</dt>
+				<dd>The interval for trail tracking (default 50)</dd>
+				
+				<dt>eventLimit</dt>
+				<dd>Time limit for each event (default 5000)</dd>
+				
+				<dt>eventHandler</dt>
+				<dd>A function to execute when an event fires, accepting argument of eventName (called on each event within an advanced shape)</dd>
+				
+				<dd>eventHandlerAdvanced</dd>
+				<dt>A function to execute when an advanced event fires, accepting argument of directions (array)</dt>
+			</dl>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.gestures.js"></script>
+	<script type="text/javascript">
+		$("#gesturezone1").gestures({ showTrail: true, advancedShapes: true, tolerance: 50 });
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+
+</body>
+</html>

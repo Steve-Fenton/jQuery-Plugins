@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Word Game Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+		.wgcontrols {
+			float: left;
+			padding: 1em 2em 1em 1em;
+			width: 100px;
+		}
+		
+		.wggrid {
+			float: left;
+		}
+		
+		.wgitem {
+			border: 1px solid silver;
+			background-color: #444444;
+			color: White;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			overflow: hidden;
+		}
+		
+		.wgcontrols p {
+			padding: 2px 5px;
+		}
+		
+		.wgadd:hover, .wgclear:hover {
+			background-color: #444444;
+			color: White;
+		}
+		
+		.wgselected {
+			background-color: Green;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Word-Game/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Word Game Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Word Game Summary</h2>
+
+			<p>The jQuery Word Game project is a plugin that creates word grids for use in word games.</p>
+		</div>
+		<div id="how">
+			<h3>5x5 Grid</h3>
+			<div id="wordgame1"></div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Word-Game/">read the word game documentation</a> 
+			for instructions on how to use the plugin.</p>
+
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>gridwidth</dt>
+				<dd>The number of columns to display.</dd>
+				
+				<dt>gridheight</dt>
+				<dd>The number of rows to display.</dd>
+				
+				<dt>allowable</dt>
+				<dd>A comma separated list of allowable values.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.wordgame.js"></script>
+	<script type="text/javascript">
+		$("#wordgame1").wordgame({ timer: 180 });
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

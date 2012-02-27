@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test</title>
+		<style type="text/css">
+			#consoleLogger {
+				font-family: Consolas, "Courier New";
+				font-size: 10px;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				height: 200px;
+				overflow: auto;
+				background-color: black;
+				color: white;
+				width: 98%;
+				padding: 0 1%;
+				white-space: pre;
+			}
+			
+			#consoleLogger .info {
+				color: white;
+			}
+			
+			#consoleLogger .warning {
+				color: orange;
+			}
+			
+			#consoleLogger .error {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+
+		<script type="text/javascript" src="stacktrace-0.3.js"></script>
+		<script type="text/javascript" src="SupplyConsole.js"></script>
+		<script type="text/javascript">
+
+		function ConsoleVisualTest() {
+			console.stackTrace = false;
+		
+			console.debug("Timer should start");
+			console.time("Tests");
+			
+			console.debug("Assert should fail");
+			console.assert(5 === "5");
+			
+			console.debug("Assert should pass");
+			console.assert(5 === 5);
+			
+			console.debug("Debug line should print");
+			console.debug("This is a debug line");
+			
+			console.debug("Not yet implemented");
+			var object = { name: "Steve", height: "tall" };
+			console.dir(object);
+			
+			console.debug("Not yet implemented");
+			var element = document.createElement("p");
+			element.innerHTML = "<span><a href='test'>Link</a></span>";
+			console.dirxml(element);
+
+			console.debug("Error should log");
+			console.error("Force an error to the console");
+			
+			console.debug("Not yet implemented");
+			console.group("Group1");
+			
+			console.debug("Not yet implemented");
+			console.groupEnd("Group1");
+			
+			console.debug("Info should log");
+			console.info("Write some info to the console");
+			
+			console.debug("Log should log");
+			console.log("Write a log to the console");
+			
+			console.debug("Not yet implemented");
+			console.profile("Profile");
+			
+			console.debug("Stack trace should log");
+			console.trace("Trace");
+			
+			console.debug("Warning should log");
+			console.warn("Write a warning to the console");
+			
+			console.debug("Timer should not be recognised");
+			console.timeEnd("undefined");
+			
+			console.debug("Timer should display result");
+			console.timeEnd("Tests");
+		}
+		
+		function WrapTest() {
+			// Will show up in the stack trace!
+			ConsoleVisualTest();
+		}
+		
+		WrapTest();
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Date Picker Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recomended styles */
+			body {
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			}
+		
+			/* DatePicker Container */
+			#datepicker {
+				background-color: #F5F5F5;
+				border: 1px solid Gray;
+				color: Gray;
+				padding: 2px;
+				font-size: 12px;
+				-moz-box-shadow: 0.5em 0.5em 0.5em Gray;
+				-webkit-box-shadow: 0.5em 0.5em 0.5em Gray;
+				box-shadow: 0.5em 0.5em 0.5em Gray;
+				-moz-border-radius: 0.5em;
+				-webkit-border-radius: 0.5em;
+				border-radius: 0.5em;
+				background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F5F5F5));
+				background: -moz-linear-gradient(top, #FFFFFF, #F5F5F5);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#F5F5F5);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#F5F5F5)";
+			}
+			
+			/* Default for links */
+			#datepicker a {
+				color: Gray;
+				text-decoration: none;
+				-moz-border-radius: 0.5em;
+				-webkit-border-radius: 0.5em;
+				border-radius: 0.5em;
+			}
+			
+			#datepicker a:hover {
+				background-color: Gray;
+				color: #FFFFFF;
+			}
+			
+			/* Saturday and Sunday */
+			#datepicker a.day6, #datepicker a.day0 {
+				color: Silver;
+			}
+			
+			#datepicker table {
+				border-collapse: collapse;
+			}
+			
+			/* Caption */
+			#datepicker caption {
+				background-color: Gray;
+				color: White;
+				padding: 0.2em;
+				-moz-border-radius: 0.5em;
+				-webkit-border-radius: 0.5em;
+				border-radius: 0.5em;
+				background: -webkit-gradient(linear, left top, left bottom, from(Silver), to(Gray));
+				background: -moz-linear-gradient(top, Silver, Gray);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=Silver, endColorstr=Gray);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=Silver, endColorstr=Gray)";
+			}
+			
+			#datepicker caption span {
+				position: relative;
+				top: 0.2em;
+			}
+			
+			#datepicker caption a.previous {
+				color: #FFFFFF;
+				float: left;
+				font-weight: bold;
+				padding: 0.2em 0.4em 0.4em 0.3em;
+			}
+			
+			#datepicker caption a.next {
+				color: #FFFFFF;
+				float: right;
+				font-weight: bold;
+				padding: 0.2em 0.3em 0.4em 0.4em;
+			}
+			
+			#datepicker caption a:hover {
+				background-color: #FFFFFF;
+				color: Gray;
+			}
+			
+			/* Dates */
+			#datepicker td {
+				text-align: center;
+				padding: 0;
+			}
+			
+			#datepicker td a {
+				display: block;
+				vertical-align: middle;
+				text-align: center;
+				padding: 0.3em 0.3em;
+			}
+			
+			/* Footer Links */
+			#datepicker .footer {
+				padding-top: 1em;
+			}
+			
+			#datepicker .footer a {
+				width: 48%;
+				display: inline-block;
+				text-align: center;
+			}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/JavaScript-Date-Picker/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>JavaScript Date Picker Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>JavaScript Date Picker Summary</h2>
+			<p>The JavaScript Date Picker is a standalone script you can use to add a date-selector with a pop-out calendar to your pages..</p>
+		</div>
+		<div id="how">
+			<form method="post" action="">
+				<fieldset>
+					<legend>Date Picker Example</legend>
+					<p><label>Select a date<br>
+					<input type="text" name="DateField" id="DateField" value="31/1/2011"></label></p>
+					<p><label>Select another date<br>
+					<input type="text" name="DateField2" id="DateField2" value="31/2/2011"></label></p>
+				</fieldset>
+			</form>
+			<div style="clear: both">&nbsp;</div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/JavaScript-Date-Picker/">read the date picker documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="DatePicker.js"></script>
+	<script type="text/javascript">
+		DatePicker.SetUpElement("DateField");
+		DatePicker.SetUpElement("DateField2");
+	</script>
+	
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

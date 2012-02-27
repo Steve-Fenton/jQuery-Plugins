@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Drag And Drop Sort Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recommended styles */
+		
+		ul .ddsinsert {
+			border-top: 3px solid Green;
+		}
+		
+		tbody .ddsinsert td {
+			border-top: 3px solid Green;
+		}
+		
+		div > .ddsinsert {
+			border-top: 3px solid Green;
+		}
+		
+		.ddsitem {
+			cursor: crosshair;
+		}
+		
+		.ddsmoving {
+			color: Orange;
+		}
+		
+		/* Optional styles */
+		
+		table {
+			width: 300px;
+			border: 1px solid Gray;
+			border-collapse: collapse;
+		}
+		
+		td {
+			border: 1px solid Gray;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Drag-And-Drop-Sort/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Drag And Drop Sort Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Drag And Drop Sort Summary</h2>
+			<p>The jQuery Drag And Drop Sort project is a plugin that adds drag and drop sorting to any group of elements.</p>
+			<p>This means you can apply drag and drop sorting to a table or a list or practically any group of elements, such as some paragraphs inside a division.</p>
+		</div>
+		<div id="how">
+			<h3>Sortable list</h3>
+			<ul id="example1">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+			</ul>
+			<h3>Sortable table</h3>
+			<table>
+				<thead>
+					<tr><th>Name</th><th>Value</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>One</td><td>1</td></tr>
+					<tr><td>Two</td><td>2</td></tr>
+					<tr><td>Three</td><td>3</td></tr>
+					<tr><td>Four</td><td>4</td></tr>
+				</tbody>
+			</table>
+			<h3>Sortable paragraphs</h3>
+			<div id="example3">
+				<p><input type="text" name="sample[]" value="One"></p>
+				<p><input type="text" name="sample[]" value="Two"></p>
+				<p><input type="text" name="sample[]" value="Three"></p>
+				<p><input type="text" name="sample[]" value="Four"></p>
+			</div>
+            <h3>Sortable divisions</h3>
+            <div id="example4">
+                <div><p>First Item</p></div>
+                <div><p>Second Item</p></div>
+                <div><p>Third Item</p></div>
+                <div><p>Fourth Item</p></div>
+            </div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Drag-And-Drop-Sort/">read the drag and drop sort documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>appendlastline</dt>
+				<dd>Specifies whether the plugin should add an additional line to allow items to be dragged to the very end of the list. Defaults to "true", but can be set to "false" if desired.</dd>
+                
+                <dt>containsInputs</dt>
+                <dd>If the drag and drop sort contains input boxes, this setting lets you still click in them. Defaults to "false", but switch to "true" if you have textboxes or other inputs in the sortable area.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.draganddropsort.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#example1").draganddropsort();
+			$("tbody").draganddropsort({ allowtransfer: false });
+			$("#example3").draganddropsort({ containsInputs: true });
+            $("#example4").draganddropsort({ addhandles: true });
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

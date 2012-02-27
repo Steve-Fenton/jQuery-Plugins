@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Slide Puzzle Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		.sp {
+			background-color: Black;
+			margin: 1em auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Slide-Puzzle/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+
+	</div>
+	<div id="header">
+		<h1>Slide Puzzle Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Slide Puzzle Summary</h2>
+			<p>The jQuery Slide Puzzle project is a plugin that creates a slide puzzle game out of any picture, such
+			as this shot I took of a hoverfly!</p>
+		</div>
+		<div id="how">
+			<h3>3x3</h2>
+			<img src="hoverfly.png" alt="Inqiusitive Hoverfly" id="example">
+			<h3>5x5</h2>
+			<img src="hoverfly.png" alt="Inqiusitive Hoverfly" id="example2">
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+			
+				<dt>size</dt>
+				<dd>The number of segments across and down (i.e. 3 would be 3 segments across and 3 segments down).</dd>
+				
+				<dt>complete</dt>
+				<dd>Script to excute on completion of a puzzle.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.slidepuzzle.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function () {
+			$("#example").slidepuzzle();
+			$("#example2").slidepuzzle({ size: 5 });
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

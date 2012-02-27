@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Easy Captions Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recomended styles */
+
+		/* Optional styles */
+		.images {
+			text-align: center;
+		}
+		
+		.images img {
+			border: 7px solid #E3E1E1;
+		}
+		
+		.eccaption p {
+			font-size: small;
+			margin: 0;
+			padding: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Easy-Captions/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Easy Captions Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Easy Captions Summary</h2>
+			<p>The jQuery Easy Captions project is a plugin that adds captions to all the images you select. It is really simple to use but looks great.</p>
+			<p>You can apply the captions to all images on your page, or just a select few using normal jQuery selectors.</p>
+		</div>
+		<div id="how">
+			<p class="images"><img src="easycaption.png" alt="This is an example image with a caption"> <img src="easycaption.png" alt="I know this is the same image, but it is just an example"> <img src="easycaption.png" alt="Another example"></p>
+			<div style="clear: both">&nbsp;</div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Easy-Captions/">read the easy captions documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>opacity</dt>
+				<dd>Set this to a value less than "1" to make the footer semi-transparent, for example "0.8".</dd>
+				
+				<dt>showclose</dt>
+				<dd>Set to "true" to show a button that closes the footer.</dd>
+				
+				<dt>closebutton</dt>
+				<dd>Any HTML string to show on the close button, for example "close", "[x]" or '<img src="close.png" alt="Close">'.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.easycaptions.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".images img").easycaptions();
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

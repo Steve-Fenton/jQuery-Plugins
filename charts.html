@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Charts Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		
+		.chartscontainer {
+			border: 1px solid #336699;
+			padding: 10px;
+			width: 70%;
+			margin: 0 auto;
+		}
+		
+		.chartscontainer ul {
+			padding-left: 0;
+		}
+		
+		.chartscontainer li {
+			list-style: none;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Charts/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+
+	</div>
+	<div id="header">
+		<h1>Charts Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Charts Summary</h2>
+			<p>The jQuery Chart project is a plugin that adds simple HTML and CSS charts to your page based on tables.</p>
+			<p>You can add multiple charts to the page.</p>
+		</div>
+		<div id="how">
+			<table id="example">
+				<caption>Horizontal Bars</caption>
+				<thead>
+					<tr>
+						<th>Breed</th>
+						<th>Populatiry</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td>Total</td>
+						<td>250</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Mongrel</td>
+						<td><a href="#">90.5</a></td>
+					</tr>
+					<tr>
+						<td>Labrador</td>
+						<td>79.5</td>
+					</tr>
+					<tr>
+						<td>Whippet</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Spaniel</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Terrier</td>
+						<td>10</td>
+					</tr>
+					<tr>
+					</tr>
+				</tbody>
+			</table>
+			<p>&nbsp;</p>
+			<table id="example2">
+				<caption>Vertical Bars (with optional grid lines)</caption>
+				<thead>
+					<tr>
+						<th>Breed</th>
+						<th>Populatiry</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td>Total</td>
+						<td>250</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Mongrel</td>
+						<td>90</td>
+					</tr>
+					<tr>
+						<td>Labrador</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td>Whippet</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Spaniel</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Terrier</td>
+						<td>10</td>
+					</tr>
+					<tr>
+					</tr>
+				</tbody>
+			</table>
+			<p>&nbsp;</p>
+			<table id="example3">
+				<caption>Grouped Bars</caption>
+				<thead>
+					<tr>
+						<th>Gender</th>
+						<th>Activity</th>
+						<th>Populatiry</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Female</td>
+						<td>Shopping</td>
+						<td>90</td>
+					</tr>
+					<tr>
+						<td>Female</td>
+						<td>Television</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>Female</td>
+						<td>Cooking</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Female</td>
+						<td>Fishing</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>Shopping</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>Television</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>Cooking</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>Fishing</td>
+						<td>40</td>
+					</tr>
+					<tr>
+					</tr>
+				</tbody>
+			</table>
+			<p>&nbsp;</p>
+			<table id="example4">
+				<caption>Waterfall Chart</caption>
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Change</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td>End Figure</td>
+						<td>250</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>3 Month Turnover</td>
+						<td>320</td>
+					</tr>
+					<tr>
+						<td>Operating Costs</td>
+						<td>-90</td>
+					</tr>
+					<tr>
+						<td>Depreciation</td>
+						<td>-110</td>
+					</tr>
+					<tr>
+						<td>Savings</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td>End Figure</td>
+						<td>200</td>
+					</tr>
+					<tr>
+					</tr>
+				</tbody>
+			</table>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Charts/">read the charts documentation</a> 
+			for instructions on how to use the plugin.</p>
+
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>charttype</dt>
+				<dd>Currently, "bars" are supported (use direction to select horizontal or vertical bars).</dd>
+				
+				<dt>direction</dt>
+				<dd>Whether the chart is horizontal or vertical.</dd>
+				
+				<dt>labelcolumn</dt>
+				<dd>The index of the column containing the label text.</dd>
+				
+				<dt>valuecolumn</dt>
+				<dd>The index of the column containing the value.</dd>
+				
+				<dt>groupcolumn</dt>
+				<dd>The index of the column containing the group name (if required).</dd>
+				
+				<dt>duration</dt>
+				<dd>Length of time in milliseconds for the chart animation.</dd>
+
+				<dt>showoriginal</dt>
+				<dd>Whether the original table should be displayed.</dd>
+				
+				<dt>chartbgcolours</dt>
+				<dd>Bar colours to be used on the charts, for example ["#336699", "#669933", "#339966"].</dd>
+				
+				<dt>chartfgcolours</dt>
+				<dd>Text colours to be used on the charts (to match the background colours), for example ["#FFFFFF", "#FFFFFF", "#FFFFFF"].</dd>
+				
+				<dt>chartpadding</dt>
+				<dd>Padding applied to the chart elements.</dd>
+				
+				<dt>chartheight</dt>
+				<dd>The display height of the chart.</dd>
+				
+				<dt>showlabels</dt>
+				<dd>Whether to show the labels on each bar.</dd>
+				
+				<dt>showgrid</dt>
+				<dd>Whether to show grid lines on the chart.</dd>
+				
+				<dt>gridlines</dt>
+				<dd>The number of sections to divide the grid into.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.charts.js"></script>
+	<script type="text/javascript">
+		$("#example").charts();
+		$("#example2").charts({ direction: "vertical", showgrid: true });
+		$("#example3").charts({ direction: "vertical", labelcolumn: 1, valuecolumn: 2, groupcolumn: 0 });
+		$("#example4").charts({ charttype: "waterfall", direction: "vertical", labelcolumn: 0, valuecolumn: 1, chartbgcolours: ["#336699", "#669933", "#993333"], chartfgcolours: ["#FFFFFF", "#FFFFFF", "#FFFFFF"] });
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Content Drag Scroller Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		.cds {
+			border: 15px solid #999999;
+			overflow: hidden;
+			margin: 1em auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Content-Drag-Scroller/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Content Drag Scroller Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Content Drag Scroller Summary</h2>
+
+			<p>The jQuery Content Drag Scroller project is a plugin that adds drag-scroll behaviour to an area of your web page, like people experience
+			when viewing PDF documents, or on a touch-screen device.</p>
+		</div>
+		<div id="how">
+			<h3>Example</h3>
+			<p>Scroll The Area Below By Dragging It - this example has CSS rules to stop the scrollbars from showing, but if you switch scrollbars on the plugin
+			plays nicely and leaving the scrollbars on also enables mouse-wheel scrolling too!</p>
+			<div id="example">
+				<p>Lorem ipsum pri ferri evertitur id, at ornatus placerat singulis vis, eam cu audiam senserit hendrerit. Tantas laudem apeirian ad cum, ei omnium reprimique vel, ex cum postea persius. Sea ex quando platonem, an mei diam volutpat. Ea mea postea propriae similique, verterem periculis et nam, eum id utamur oblique dolorum. Diam bonorum postulant id est, nobis mucius delenit id per, at assum maiestatis usu. Sea liber ponderum laboramus eu.</p>
+				<p>Ius nulla elaboraret id, epicurei phaedrum concludaturque no eam. Ad ullum noluisse sea, neglegentur intellegebat definitionem ne ius, ea senserit expetenda maiestatis mel. Meliore expetendis ad eam, semper dissentiunt ex eum, ne vel tale quaestio scribentur. Invidunt constituam cu eum. Sit prima delicatissimi no, ea eam movet insolens.</p>
+				<p>Denique menandri gloriatur eu sea, tantas decore ancillae id pro, nihil zzril qui no. Ei per soluta postea qualisque, usu dolorum accusam at, per at verear urbanitas. Ea eos discere consetetur, usu ad putant voluptatibus. Ius an novum nominavi erroribus. Cu his aperiam fierent perpetua, per te nominavi intellegam honestatis.</p>
+				<p>Sonet iudico ea ius. Ei insolens principes persequeris eos, id nostro meliore molestie his, quo in tamquam laoreet corpora. An nec nemore efficiendi, ne dicit nusquam verterem quo. Aliquam tibique sea ne, at mentitum eloquentiam duo. Ea albucius phaedrum definitiones vim, homero persius ex his. Vidisse intellegam scripserit est in, ea vel utinam eleifend repudiandae.</p>
+				<p>Sed id erant detracto consetetur. Habeo aliquip patrioque te usu. Ei qui error quidam. Mea ad enim meis, ius prompta aliquid no, vis vivendo prodesset concludaturque te. Nec ridens dolores ad, at eos suas repudiare delicatissimi. Ex reque insolens sit, quas euripidis eos an. Vel tollit labores posidonium ea.</p>
+				<p>Ea mea malorum appetere, quo velit consul audire eu, no cum mutat sententiae. Ius omittam inimicus ut, no vis kasd delectus consequuntur. In cum minim philosophia, stet explicari eu nec. Eu prima soluta detracto per. Et tollit inermis vis, ex cum adhuc graeco scaevola.</p>
+				<p>Meis blandit gubergren pri et, dolores instructior ne nec, eu nam qualisque expetendis. Harum nobis adversarium vel eu, blandit vulputate eu sed, nostro voluptaria mea ei. Noluisse appareat cum ne, at cum fugit vivendum. Vide falli repudiandae ei duo, his ludus similique in. Mei et fierent complectitur, mea assum bonorum sapientem cu, qui nostro sapientem scripserit ad.</p>
+				<p>Vel accumsan partiendo ad, eam et libris invidunt, vix verear eruditi vituperata ad. Te mei elitr oratio eligendi, pro affert impedit efficiendi in. Clita feugait verterem et eum. Ei est aeque indoctum scribentur.</p>
+				<p>Possit vituperatoribus usu at, aliquyam repudiandae interpretaris mel eu. Viris scripta placerat sea no, cu nam augue sonet, id minim doctus fastidii per. His timeam mentitum dignissim te, graecis delectus ius ea. Mei odio accusam ei, an doctus epicuri mea. Vis tibique urbanitas no. Mea inani ridens ne, ut vis doming audire principes, vix meliore mediocrem id.</p>
+				<p>Ea duo essent deseruisse scriptorem, ut vix tamquam omnesque abhorreant. Vel ex clita mollis. Duo ignota oportere ex, semper vivendo legendos duo ex. In sumo oporteat vis, impetus tamquam mea ex. Eu ignota nonummy necessitatibus pro, iusto interesset cu nam. Pertinax senserit cotidieque eu sit.</p>
+			</div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Content-Drag-Scroller/">read the content drag scroller documentation</a> 
+			for instructions on how to use the plugin.</p>
+
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>easing</dt>
+				<dd>How to ease the animations, recommend "easeOutExpo", which requires jQuery Easing plugin. Uses "linear" easing by default.</dd>
+				
+				<dt>velocityFactor</dt>
+				<dd>Adjustment for the flow after the drag is ended, affects the speed and distance of the run-over.</dd>
+				
+				<dt>velocityCheckWait</dt>
+				<dd>The intervals at which velocity is checked.</dd>
+				
+				<dt>afterScrollDuration</dt>
+				<dd>The length of time to continue the scroll after the drag ends.</dd>
+				
+				<dt>cursor</dt>
+				<dd>The cursor to display over the scrollable area.</dd>
+				
+				<dt>width</dt>
+				<dd>The width for the area, default "auto"</dd>
+				
+				<dt>height</dt>
+				<dd>The height for the area, default "400px"</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.contentdragscroller.js"></script>
+	<script type="text/javascript">
+		$("#example").contentdragscroller({ width: "70%" });
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

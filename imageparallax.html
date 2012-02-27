@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image Parallax Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recomended styles */
+
+		/* Optional styles */
+		#example > div {
+			border: 1px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Image-Parallax/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Image Parallax Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Image Parallax Summary</h2>
+			<p>The jQuery Image Parallax project is a plugin that gives an illusion of depth to an image with transparency (PNG, GIF) by repeating it and animating movement.</p>
+			<p>You can either use the built-in duplication or supply a list of images to be used by the animation.</p>
+		</div>
+		<div id="how">
+			<h3>Using a single image</h3>
+			<div id="example"><img src="imageparallax.png" alt="Image Parallax" id="myimage"></div>
+			<h3>Using many images</h3>
+			<p>In this example, vertical movement has been switched off.</p>
+			<div id="example"><img src="imageparallax_0.png" alt="Image Parallax" id="myimage2"></div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Image-Parallax/">read the image parallax documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>intensity</dt>
+				<dd>The intensity of the effect. Set to "0.5" by default. "1" would scroll the background at the same speed as the content, "0.5" makes the 
+				background move more slowly than the content. "1.5" makes the background move faster than the content. Sensible values range from "0.1" to "2.5".</dd>
+				
+				<dt>images</dt>
+				<dd>Used to supply a list of images to be used, if multiple images are desired.</dd>
+				
+				<dt>numberoflayers</dt>
+				<dd>When a single image is being used, the number of layers to create.</dd>
+				
+				<dt>allowVertical</dt>
+				<dd>Whether vertical movement is allowed.</dd>
+				
+				<dt>allowHorizontal</dt>
+				<dd>Whether horizontal movement is allowed.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.imageparallax.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#myimage").imageparallax();
+			
+			var myImages = new Array();
+			myImages[0] = "imageparallax_0.png";
+			myImages[1] = "imageparallax_1.png";
+			myImages[2] = "imageparallax_2.png";
+			$("#myimage2").imageparallax({ images: myImages, allowVertical: false });
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

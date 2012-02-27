@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mobile Drag And Drop Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recommended styles */
+		
+		.drag, .drag2 {
+			float: left;
+			width: 21%;
+			background-color: Green;
+			color: White;
+			margin: 10px 2%;
+			cursor: move;
+			text-align: center;
+			-moz-border-radius: 1em;
+			-webkit-border-radius: 1em;
+			border-radius: 1em;
+		}
+		
+		.selected {
+			background-color: Yellow;
+			color: Black;
+		}
+		
+		.drop {
+			background-color: Blue;
+			color: White;
+			margin: 3px;
+			padding: 10px;
+			-moz-border-radius: 1em;
+			-webkit-border-radius: 1em;
+			border-radius: 1em;
+		}
+
+		.active {
+			background-color: orange;
+			cursor: crosshair;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Mobile-Drag-And-Drop-Example/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Mobile Drag And Drop Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Mobile Drag And Drop Summary</h2>
+			<p>The jQuery Mobile Drag And Drop project is a plugin provides drag-and-drop functionality that works on desktop browsers as well as touch-screen mobile 
+			devices.</p>
+			<p>Using a desktop browser, you can fully utilise the drag-and-drop. On a mobile browser, there is a fall-back tap-to-life and tap-to-drop behaviour.</p>
+			<p>Note: The 4th draggable item can only be placed in the second drop zone - this is an example that shows how each draggable item can be given different drop zones.</p>
+		</div>
+		<div id="how">
+			<div class="drop" id="drop1">
+				<div style="clear: both;"><p>You can drop items here.</p></div>
+			</div>
+			<div class="drop" id="drop2">
+				<div style="clear: both;"><p>You can drop items here too.</p></div>
+			</div>
+			<div class="drag" id="drag1">
+				<p>Drag 1</p>
+			</div>
+			<div class="drag" id="drag2">
+				<p>Drag 2</p>
+			</div>
+			<div class="drag" id="drag3">
+				<p>Drag 3</p>
+			</div>
+			<div class="drag2" id="drag4">
+				<p>Drag 4*</p>
+			</div>
+			<div style="clear: both">&nbsp;</div>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Constant-Footer/">read the mobile drag and drop documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+			
+				<dt>targets</dt>
+				<dd>The jQuery selector of the element or elements that you can drop an item onto (otherwise known as "drop zones").</dd>
+
+				<dt>status</dt>
+				<dd>The jQuery selector for an element, into which the current status of dragging and dropping will be placed. This is handy for testing purposes!</dd>
+
+				<dt>selectedclass</dt>
+				<dd>The class to be applied to draggable items when they are picked up.</dd>
+				
+				<dt>activeclass</dt>
+				<dd>The class to be applied to "drop zones" when a draggable item is picked up.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.mobiledragdrop.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".drag").mobiledraganddrop({ targets: ".drop", status: "#status"});
+			$(".drag2").mobiledraganddrop({ targets: "#drop2", status: "#status"});
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

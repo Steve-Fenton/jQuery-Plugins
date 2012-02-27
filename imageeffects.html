@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image Effects Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Optional styles */
+		.imefgrowin div {
+			border: 1px solid Silver;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Image-Effects/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Image Effects Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Image Effects Summary</h2>
+			<p>The jQuery Image Effects project is a plugin that adds simple effects to your images for various events.</p>
+		</div>
+		<div id="how">
+			<h3>Grow In</h3>
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect1">
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect2">
+			<h3>Grow Out</h3>
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect3">
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect4">
+			<h3>Blur</h3>
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect5">
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect6">
+			<h3>Un-Blur</h3>
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect7">
+			<img src="easycaption.png" height="200" width="300" alt="Example Image" class="effect8">
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Image-Effects/">read the image effects documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+				
+				<dt>startevent</dt>
+				<dd>The event used to trigger the effect, such as "mouseover", the "focus" event is also automatically added for keyboard accessibility.</dd>
+				
+				<dt>resetevent</dt>
+				<dd>The event used to reset the effect, such as "mouseout", the "blur" event is also automatically added for keyboard accessibility.</dd>
+				
+				<dt>effect</dt>
+				<dd>"growin", "growout".</dd>
+				
+				<dt>speed</dt>
+				<dd>The number of milliseconds to animate, default 200</dd>
+				
+				<dt>easing</dt>
+				<dd>Either "swing" or "linear" easing.</dd>
+				
+				<dt>colour</dt>
+				<dd>Default is "#FFFFFF". The colour of the feature.</dd>
+				
+				<dt>size</dt>
+				<dd>The number representing the size, default 25.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.imageeffects.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".effect1").imageeffects();
+			$(".effect2").imageeffects({ colour: "#CCCCCC" });
+			$(".effect3").imageeffects({ effect: "growout" });
+			$(".effect4").imageeffects({ effect: "growout", colour: "#000000" });
+			$(".effect5").imageeffects({ effect: "blur", size: 2 });
+			$(".effect6").imageeffects({ effect: "blur" });
+			$(".effect7").imageeffects({ effect: "unblur", size: 2 });
+			$(".effect8").imageeffects({ effect: "unblur" });
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

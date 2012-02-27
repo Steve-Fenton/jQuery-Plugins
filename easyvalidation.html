@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Easy Validation Example</title>
+	<link rel="stylesheet" type="text/css" href="optional.css">
+	<style type="text/css">
+		/* Recommended styles */
+		.musthave {
+			background-color: #CCFFFF;
+		}
+		
+		.validationerror {
+			background-color: #FFBBBB;
+		}
+	
+		/* Optional styles */
+
+	</style>
+</head>
+<body>
+	<div id="links">
+		<p>This is the live demo, <a href="http://www.stevefenton.co.uk/Content/Jquery-Easy-Validation/">view the documentation</a>. 
+		Written by <a href="http://www.stevefenton.co.uk/">Steve Fenton</a>.</p>
+	</div>
+	<div id="header">
+		<h1>Easy Validation Example</h1>
+	</div>
+	<div id="maincontent">
+		<div id="what">
+			<h2>Easy Validation Summary</h2>
+			<p>The jQuery Easy Validation project is a plugin that adds some simple "mandatory field" validation to a form.</p>
+			<p>As well as preventing form submission in the event of an error, it will add a CSS class to indicate an error.</p>
+		</div>
+		<div id="how">
+			<p>In this example, all fields are required except "Height".</p>
+			<form method="post" action="">
+				<fieldset>
+					<legend>Example Form</legend>
+					<p><label>Name<br><input type="text" name="Name" class="mandatory"></label></p>
+					<p><label>Age<br><input type="text" name="Age" class="mandatory"></label></p>
+					<p><label>Height<br><input type="text" name="Height"></label></p>
+					<p><label>Gender<br><input type="text" name="Gender" class="mandatory"></label></p>
+					<p><input type="submit" value="Submit"></p>
+				</fieldset>
+			</form>
+			<p>Please <a href="http://www.stevefenton.co.uk/Content/Jquery-Easy-Validation/">read the constant footer documentation</a> 
+			for instructions on how to use the plugin.</p>
+		</div>
+		<div id="options">
+			<h2>Options</h2>
+			<dl>
+				<dt>classmodifier</dt>
+				<dd>Used to apply class names to the elements created by the plugin. You only need to specify a class modifier if you have a name-clash.</dd>
+
+				<dt>initialclass</dt>
+				<dd>A CSS class to indicate the field is required.</dd>
+
+				<dt>errorclass</dt>
+				<dd>A CSS class to indicate the validation has failed.</dd>
+				
+				<dt>message</dt>
+				<dd>A warning to show to the user.</dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.easyvalidation.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".mandatory").easyvalidation();
+		});
+	</script>
+
+	<!-- Just for web stats... not needed for the plugin -->
+	<script type="text/javascript">
+		var myMasterUri = "http://www.stevefenton.co.uk/";
+		var myStatUrl = "http://www.stevefenton.co.uk/reports/";
+	</script>	
+	<script type="text/javascript" src="/reports/swiftstats.js"></script>
+</body>
+</html>

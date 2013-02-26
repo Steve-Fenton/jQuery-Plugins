@@ -29,7 +29,7 @@
 		
 		return this.each(function () {
 
-			$This = $(this);
+			var $This = $(this);
 			
 			upDownStep = parseFloat(config.step);
 

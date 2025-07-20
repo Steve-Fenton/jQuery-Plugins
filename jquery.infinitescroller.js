@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Infinite-Scroller/
+	// http://stevefenton.co.uk/Content/Jquery-Infinite-Scroller/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.0.1
     // Contributions by: 

@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Mega-Select-List/
+	// http://stevefenton.co.uk/Content/Jquery-Mega-Select-List/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.0.4
     // Contributions by: 

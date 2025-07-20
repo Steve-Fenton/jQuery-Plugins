@@ -3,7 +3,7 @@ var markers = [];
 var infoWindow;
 
 // This script was written by Steve Fenton
-// http://www.stevefenton.co.uk/Content/Jquery-Simple=Map/
+// http://stevefenton.co.uk/Content/Jquery-Simple=Map/
 // Feel free to use this jQuery Plugin
 // Version: 1.1.0
 // Contributions by: 

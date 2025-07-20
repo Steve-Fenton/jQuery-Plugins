@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Content-Drag-Scroller/
+	// http://stevefenton.co.uk/Content/Jquery-Content-Drag-Scroller/
 	// Feel free to use this jQuery Plugin
 	// Version: 0.1.0
     // Contributions by: 

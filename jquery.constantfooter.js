@@ -1,12 +1,11 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Constant-Footer/
+	// http://stevefenton.co.uk/Content/Jquery-Constant-Footer/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.0.3
     // Contributions by: 
 	
-	var nextSetIdentifier = 0;
 	var classModifier = "";
 	
 	var feedItems;
@@ -31,14 +30,6 @@
 			}
 			feedTimer = window.setTimeout(ShowNextFeedItem, (feedDelay * 1000));
 		});
-	}
-
-	// Gets rid of CDATA sections
-	function StripCdataEnclosure(string) {
-		if (string.indexOf("<![CDATA[") > -1) {
-			string = string.replace("<![CDATA[", "").replace("]]>", "");
-		}
-		return string;
 	}
 
 	// Add padding to the bottom of the document so it can be scrolled past the footer
@@ -112,7 +103,7 @@
 				
 				$.get(config.feed, function(xmlDoc) {
 					
-					var itemList = xmlDoc.getElementsByTagName("item");
+					var itemList = xmlDoc.getElementsByTagName("entry");
 					
 					for (var i = 1; i <= itemList.length; i++) {
 					

@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Side-Content/
+	// http://stevefenton.co.uk/Content/Jquery-Side-Content/
 	// Feel free to use this jQuery Plugin
 	// Version: 1.0.0
     // Contributions by: 

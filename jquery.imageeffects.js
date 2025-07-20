@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Image-Effects/
+	// http://stevefenton.co.uk/Content/Jquery-Image-Effects/
 	// Feel free to use this jQuery Plugin
 	// Version: 1.0.4
     // Contributions by: 

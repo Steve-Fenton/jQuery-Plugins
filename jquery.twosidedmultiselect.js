@@ -1,7 +1,7 @@
 (function($) {
 
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Two-Sided-Multi-Selector/
+	// http://stevefenton.co.uk/Content/Jquery-Two-Sided-Multi-Selector/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.0.8
     // Contributions by: 

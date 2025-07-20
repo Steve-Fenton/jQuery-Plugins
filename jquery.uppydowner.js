@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Uppy-Downer/
+	// http://stevefenton.co.uk/Content/Jquery-Uppy-Downer/
 	// Feel free to use this jQuery Plugin
 	// Version: 1.0.1
     // Contributions by: 

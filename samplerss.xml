@@ -1,34 +1,170 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-    <atom:link href="http://www.stevefenton.co.uk/RSS/Blog/" rel="self" type="application/rss+xml" />
-    <title>Steve Fenton Blog</title>
-    <link>http://www.stevefenton.co.uk/RSS/Blog/</link>
-    <description>Blog</description>
-    <language>en</language>
-    <copyright>Copyright 2008 - 2010 Steve Fenton</copyright>
-    <category>Blog</category>
-    <generator>Swift Point Content Management System</generator>
-    <ttl>60</ttl>
-    <managingEditor>info@stevefenton.co.uk (Site Admin)</managingEditor>
-    <item>
-        <title><![CDATA[Jquery Plugin For Drag And Drop On Mobile Phones]]></title>
-        <link>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Jquery-Plugin-For-Drag-And-Drop-On-Mobile-Phones/</link>
-        <description><![CDATA[Monday, 12th July 2010 - Jquery Plugin For Drag And Drop On Mobile Phones <p>I have made some reasonable progress with creating a drag-and-drop interface that works both on desktop computers and mobile devices.</p><p>For those who are unaware of the problem, most touch-screen phones actually hijack the action of dragging on a web page in order to scroll the page up, down, left and right. This means that your average drag and drop mechanism doesn't work on mobile devices despite their inherent tactile nature.</p><p>However, I have managed to create a simple script that works as normal drag and drop on a desktop browser, which also has a fail-safe "tap to lift" and "tap to drop" mechanism that works on mobile devices, such as smart-phones, iPhones, iPads and Android phones. I have rolled the script into a jQuery plugin for ease of use, although you could easily adapt it to suit a non-jQuery environment.]]> &lt;a href="http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Jquery-Plugin-For-Drag-And-Drop-On-Mobile-Phones"&gt;View Details&lt;/a&gt;.</description>
-        <guid>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Jquery-Plugin-For-Drag-And-Drop-On-Mobile-Phones</guid>
-    </item>
-    <item>
-        <title><![CDATA[The Importance Of Anonymising Blog Posts]]></title>
-        <link>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/The-Importance-Of-Anonymising-Blog-Posts/</link>
-        <description><![CDATA[Monday, 12th July 2010 - The Importance Of Anonymising Blog Posts <p>With blogging become ever more popular in the technology world, both in terms of sharing and finding new ideas or answers to common problems, now is a good time to highlight the importance of anonymising your blog posts.</p><p>You may have stumbled across something absolutely awesome while fixing a problem for one of your clients and you'll want to share it with the big wide world - but you may be surprised about how many pieces of information you may be giving away if you copy and paste a chunk of code into your blog. Not only this, but in your blog post, it is sometimes better to rename all of your fields and methods to make them contribute to the explanation of your article.]]> &lt;a href="http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/The-Importance-Of-Anonymising-Blog-Posts"&gt;View Details&lt;/a&gt;.</description>
-        <guid>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/The-Importance-Of-Anonymising-Blog-Posts</guid>
-    </item>
-    <item>
-        <title><![CDATA[Simple Mobile Web Browser Drag And Drop]]></title>
-        <link>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Simple-Mobile-Web-Browser-Drag-And-Drop/</link>
-        <description><![CDATA[Friday, 9th July 2010 - Simple Mobile Web Browser Drag And Drop <p>I recently discovered a problem on my mobile device with drag and drop. The problem is that mobile devices are now an inherently drag and drop environment, where almost everything can be done at the swipe of a finger. You would think that this would make it easier to have items on your web page that can be dragged around, but actually it makes it more difficult. The reason it is harder is that when a user performs a swipe or drag action while browsing a website, the mobile device captures this event and uses it to scroll around the page. This means that your draggable item never receives the instruction to move.]]> &lt;a href="http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Simple-Mobile-Web-Browser-Drag-And-Drop"&gt;View Details&lt;/a&gt;.</description>
-        <guid>http://www.stevefenton.co.uk/Content/Blog/Date/201007/Blog/Simple-Mobile-Web-Browser-Drag-And-Drop</guid>
-    </item>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Steve Fenton</title>
+  <subtitle>My website, tech blog, and other information.</subtitle>
+  <link href="https://stevefenton.co.uk/feed.xml" rel="self" />
+  <link href="https://stevefenton.co.uk" />
+  <id>https://stevefenton.co.uk/feed.xml</id>
+  <updated>2025-07-11T00:00:00.000Z</updated>
 
-</channel>
-</rss>
+    <entry>
+      <title>Meanwhile in DevOps #36: Consternation bias</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0036" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0036/</id>
+      <published>2025-07-11T00:00:00.000Z</published>
+      <updated>2025-07-11T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Consternation bias!</summary>
+    </entry>
+    <entry>
+      <title>Articles elsewhere</title>
+      <link href="https://stevefenton.co.uk/about-me/articles-elsewhere" />
+      <id>https://stevefenton.co.uk/about-me/articles-elsewhere/</id>
+      <published>2022-10-02T00:00:00.000Z</published>
+      <updated>2025-07-04T00:00:00.000Z</updated>
+      <summary>Articles and white papers I've written that are available elsewhere.</summary>
+    </entry>
+    <entry>
+      <title>Press</title>
+      <link href="https://stevefenton.co.uk/about-me/press" />
+      <id>https://stevefenton.co.uk/about-me/press/</id>
+      <published>2022-10-02T00:00:00.000Z</published>
+      <updated>2025-07-04T00:00:00.000Z</updated>
+      <summary>A roll call of mentions I've received elsewhere.</summary>
+    </entry>
+    <entry>
+      <title>Programmer Events</title>
+      <link href="https://stevefenton.co.uk/about-me/programmer-events" />
+      <id>https://stevefenton.co.uk/about-me/programmer-events/</id>
+      <published>2022-10-02T00:00:00.000Z</published>
+      <updated>2025-07-04T00:00:00.000Z</updated>
+      <summary>A list of my online and in-person events.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #35: Ellis bans ensemble programming</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0035" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0035/</id>
+      <published>2025-07-01T00:00:00.000Z</published>
+      <updated>2025-07-01T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Ellis bans ensemble programming.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #34: Ellis starts another front-end framework refresh</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0034" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0034/</id>
+      <published>2025-06-27T00:00:00.000Z</published>
+      <updated>2025-06-27T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Ellis starts another front-end framework refresh.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #33: Doug optimizes Work Station 1</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0033" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0033/</id>
+      <published>2025-06-20T00:00:00.000Z</published>
+      <updated>2025-06-20T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Doug optimizes Work Station 1.</summary>
+    </entry>
+    <entry>
+      <title>Delete all local git branches except the main branch</title>
+      <link href="https://stevefenton.co.uk/blog/2022/04/delete-all-local-git-branches-except-the-main-branch" />
+      <id>https://stevefenton.co.uk/blog/2022/04/delete-all-local-git-branches-except-the-main-branch/</id>
+      <published>2022-04-07T13:41:30.000Z</published>
+      <updated>2025-06-19T00:00:00.000Z</updated>
+      <summary>Find out how to clean up your local git branches with a script to delete everything except main.</summary>
+    </entry>
+    <entry>
+      <title>Add links to Octopus notifications to Slack</title>
+      <link href="https://stevefenton.co.uk/blog/2025/06/add-links-to-octopus-slack-notification" />
+      <id>https://stevefenton.co.uk/blog/2025/06/add-links-to-octopus-slack-notification/</id>
+      <published>2025-06-17T00:00:00.000Z</published>
+      <updated>2025-06-17T00:00:00.000Z</updated>
+      <summary>How to add add links to Octopus notifications to Slack</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #32: Murray blunts the vibe</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0032" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0032/</id>
+      <published>2025-06-13T00:00:00.000Z</published>
+      <updated>2025-06-13T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Murray blunts the vibe.</summary>
+    </entry>
+    <entry>
+      <title>Software Delivery Research</title>
+      <link href="https://stevefenton.co.uk/publications/software-delivery-research" />
+      <id>https://stevefenton.co.uk/publications/software-delivery-research/</id>
+      <published>2024-05-01T00:00:00.000Z</published>
+      <updated>2025-06-12T00:00:00.000Z</updated>
+      <summary>Research-related publications and updates.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #31: Blake has a cunning plan</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0031" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0031/</id>
+      <published>2025-06-06T00:00:00.000Z</published>
+      <updated>2025-06-06T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Blake has a cunning plan.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #30: Ellis explains WIP limits</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0030" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0030/</id>
+      <published>2025-05-30T00:00:00.000Z</published>
+      <updated>2025-05-30T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Ellis explains WIP limits.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #29: Murray appraises the research</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0029" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0029/</id>
+      <published>2025-05-16T00:00:00.000Z</published>
+      <updated>2025-05-16T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Murray appraises the research.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #28: Murray shifts left</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0028" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0028/</id>
+      <published>2025-05-09T00:00:00.000Z</published>
+      <updated>2025-05-09T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Murray shifts left.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #27: Murray introduces DevSecOps</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0027" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0027/</id>
+      <published>2025-05-01T00:00:00.000Z</published>
+      <updated>2025-05-01T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Murray introduces DevSecOps.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in HeckOps #1: Harry briefs the demons on AI</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-heckops/0001" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-heckops/0001/</id>
+      <published>2025-04-24T00:00:00.000Z</published>
+      <updated>2025-04-24T00:00:00.000Z</updated>
+      <summary>Meanwhile in HeckOps, Harry briefs the demons on AI.</summary>
+    </entry>
+    <entry>
+      <title>About Me</title>
+      <link href="https://stevefenton.co.uk/about-me" />
+      <id>https://stevefenton.co.uk/about-me/</id>
+      <published>2022-10-02T00:00:00.000Z</published>
+      <updated>2025-04-22T00:00:00.000Z</updated>
+      <summary>A short biography of Steve Fenton.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #26: Murray invents Team Nopologies</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0026" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0026/</id>
+      <published>2025-04-17T00:00:00.000Z</published>
+      <updated>2025-04-17T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Murray invents Team Nopologies.</summary>
+    </entry>
+    <entry>
+      <title>Meanwhile in DevOps #25: Murray tries to be a DevOps thought leader</title>
+      <link href="https://stevefenton.co.uk/blog/meanwhile-in-devops/0025" />
+      <id>https://stevefenton.co.uk/blog/meanwhile-in-devops/0025/</id>
+      <published>2025-04-14T00:00:00.000Z</published>
+      <updated>2025-04-14T00:00:00.000Z</updated>
+      <summary>Meanwhile in DevOps, Murray tries to be a DevOps thought leader.</summary>
+    </entry>
+</feed>

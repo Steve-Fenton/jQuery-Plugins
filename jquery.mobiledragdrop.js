@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Mobile-Drag-And-Drop/
+	// http://stevefenton.co.uk/Content/Jquery-Mobile-Drag-And-Drop/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.0.3
     // Contributions by: 

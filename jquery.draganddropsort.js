@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Drag-And-Drop-Sort/
+	// http://stevefenton.co.uk/Content/Jquery-Drag-And-Drop-Sort/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.1.3
     // Contributions by: Brian Wong

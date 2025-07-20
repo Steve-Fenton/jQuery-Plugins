@@ -1,7 +1,7 @@
 (function($)
 {
 	// This script was written by Steve Fenton
-	// http://www.stevefenton.co.uk/Content/Jquery-Easy-Validation/
+	// http://stevefenton.co.uk/Content/Jquery-Easy-Validation/
 	// Feel free to use this jQuery Plugin
 	// Version: 3.0.1
     // Contributions by: 
